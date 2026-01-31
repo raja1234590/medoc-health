@@ -74,7 +74,7 @@ If you see `connect ECONNREFUSED ::1:27017`, it means MongoDB is not running or 
 
 4. **Update .env file**:
    ```env
-   MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/opd_tokens?retryWrites=true&w=majority
+   
    ```
    Replace `username` and `password` with your Atlas credentials.
 
