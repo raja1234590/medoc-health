@@ -1,0 +1,70 @@
+================================================================================
+                    MONGODB ERROR - DO THIS NOW
+================================================================================
+
+PROBLEM: MongoDB is NOT running on your computer.
+
+SOLUTION: Use MongoDB Atlas (Cloud - FREE) - Takes 5 minutes!
+
+================================================================================
+STEP 1: Create MongoDB Atlas Account (2 minutes)
+================================================================================
+
+1. Open browser: https://www.mongodb.com/cloud/atlas/register
+2. Sign up (use Google/GitHub for faster signup)
+3. Click "Build a Database"
+4. Choose FREE (M0) tier
+5. Click "Create" - wait 3-5 minutes
+
+================================================================================
+STEP 2: Get Connection String (1 minute)
+================================================================================
+
+1. When cluster is ready, click "Connect"
+2. Click "Connect your application"
+3. Copy the connection string
+
+4. Go to "Database Access" → Create user (username + password)
+5. Go to "Network Access" → "Allow Access from Anywhere"
+
+================================================================================
+STEP 3: Update .env File (2 minutes)
+================================================================================
+
+1. Go to: D:\medoc health
+2. Open .env file (I just created it for you)
+3. Find this line:
+   MONGODB_URI=mongodb://localhost:27017/opd_tokens
+
+4. Replace it with your Atlas connection string:
+   MONGODB_URI=mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/opd_tokens?retryWrites=true&w=majority
+
+   Replace:
+   - username → your database username
+   - password → your database password
+   - cluster0.xxxxx.mongodb.net → your actual cluster URL
+
+================================================================================
+STEP 4: Restart Server
+================================================================================
+
+1. Make sure you're in: D:\medoc health (NOT backend/)
+2. Stop server (Ctrl+C)
+3. Run: npm run dev
+
+You should see:
+✓ Connected to MongoDB
+✓ Server running on port 5000
+
+================================================================================
+TEST IT
+================================================================================
+
+Open browser: http://localhost:5000/health
+
+Should show: {"status":"healthy","database":"connected"}
+
+================================================================================
+
+MongoDB Atlas is FREE and the easiest solution!
+No installation needed - just works!
