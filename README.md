@@ -28,11 +28,6 @@ API_BASE_URL=http://localhost:5000
 CORS_ORIGIN=http://localhost:3000
 ```
 
-**For MongoDB Atlas (Cloud):**
-```env
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/opd_tokens?retryWrites=true&w=majority
-```
-
 ### 3. Start MongoDB
 
 **Local MongoDB:**
