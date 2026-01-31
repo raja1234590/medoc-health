@@ -21,11 +21,11 @@ cd ..
 Create `.env` file in root directory:
 
 ```env
-PORT=5000
-NODE_ENV=development
-MONGODB_URI=mongodb://localhost:27017/opd_tokens
-API_BASE_URL=http://localhost:5000
-CORS_ORIGIN=http://localhost:3000
+PORT
+NODE_ENV
+MONGODB_URI
+API_BASE_URL
+CORS_ORIGIN
 ```
 
 ### 3. Start MongoDB
